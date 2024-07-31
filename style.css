@@ -18,7 +18,7 @@
     position: relative;
     font-family: sans-serif;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 20vh;
   }
   
   .lines {
@@ -103,12 +103,12 @@
 
  h2 {
     position: absolute;
-    top: 260px;
+    top: 360px;
     left: 183px;
 }
 h3 {
     position: absolute;
-    top: 300px; 
+    top: 400px; 
     left: 185px; 
 }
 * { 
@@ -154,6 +154,6 @@ header{
 }
  footer {
   position: absolute;
-  top: 580px;
-  left: -65px;
+  top: 880px;
+  left: -80px;
  }
