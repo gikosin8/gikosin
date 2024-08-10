@@ -157,3 +157,6 @@ header{
   top: 880px;
   left: -80px;
  }
+ @media (max-width: 600px) {
+  
+ }
