@@ -1,203 +1,167 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box !important;
-  }
-  
-  html, body {
-    height: 100%;
-  }
-  
-  body {
-    display: table;
-    width: 100%;
-    height: 100%;
-    background-color: #171717;
-    color: #000;
-    line-height: 1.6;
-    position: relative;
-    font-family: sans-serif;
-    overflow: hidden;
-    min-height: 20vh;
-  }
-  
-  .lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    margin: auto;
-    width: 90vw;
-  }
-  
-  .line {
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-  }
-  
-  .line::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 15vh;
-    width: 100%;
-    top: -50%;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-    animation: drop 7s 0s infinite;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  }
-  
-  .line:nth-child(1) {
-    margin-left: -25%;
-  }
-  
-  .line:nth-child(1)::after {
-    animation-delay: 2s;
-  }
-  
-  .line:nth-child(3) {
-    margin-left: 25%;
-  }
-  
-  .line:nth-child(3)::after {
-    animation-delay: 2.5s;
-  }
-  
-  @keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
-    }
-  }
-  
-
-  h2 {
-    color: rgb(249, 249, 249);
-    margin-left: 20px;
-  }
-
-  h3 {
-    color: rgb(221, 221, 221);
-    margin-left: 20px;
-  }
-  
-  h6 {
-    color: rgb(82, 28, 28);
-    margin-left: 20px;
-  }
-  button {
-    color: rgb(9, 100, 97);
-    margin-left: 20px;
-  
-  }
-
- h2 {
-    position: absolute;
-    top: 360px;
-    left: 183px;
-}
-h3 {
-    position: absolute;
-    top: 400px; 
-    left: 185px; 
-}
-* { 
-
-   margin: 0;
-   padding:0;
-   box-sizing: border-box;
-   font-family: "popping" "sans-serif";
-  
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     padding: 10px 100px;
-     background: #444345;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     z-index: 99;
-     opacity: 92%;
-
-
-}
-
-.logo {
-    border-radius: 50%;
-    font-size: 2em;
-    color: #fff;
-    user-select: none;
-}
-
-.navigation a {
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
- footer {
-  position: absolute;
-  top: 880px;
-  left: -80px;
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+  height: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: #171717;
+  color: #fff; /* შეიცვალა ფერი, რომ მეტი კონტრასტი ჰქონდეს */
+  line-height: 1.6;
+  position: relative;
+  font-family: 'Poppins', sans-serif; /* დაამატე "Poppins" ფონტი */
+  overflow: hidden;
 }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
 }
 
-main {
-    margin: 20px 0;
+.line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-section {
-    margin-bottom: 20px;
+.line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: drop 7s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+  margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+  animation-delay: 2s;
+}
+
+.line:nth-child(3) {
+  margin-left: 25%;
+}
+
+.line:nth-child(3)::after {
+  animation-delay: 2.5s;
+}
+
+@keyframes drop {
+  0% {
+      top: -50%;
+  }
+  100% {
+      top: 110%;
+  }
 }
 
 h2 {
-    color: #333;
+  color: rgb(249, 249, 249);
+  position: absolute;
+  top: 360px;
+  left: 200px; /* შეცვლილი ადგილმდებარეობა */
 }
 
-/* მედია შეკვეთები */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+h3 {
+  color: rgb(221, 221, 221);
+  position: absolute;
+  top: 400px; 
+  left: 200px; /* შეცვლილი ადგილმდებარეობა */
+}
 
-    h1 {
-        font-size: 24px;
-    }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background: rgba(68, 67, 69, 0.92); /* ოდნავ გამჭვირვალე ფონტი */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
 
-    h2 {
-        font-size: 20px;
-    }
+.logo {
+  border-radius: 50%;
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px; /* დაამატე დამაკავშირებელი */
+  left: 20px; /* გადაამოწმე მდებარეობა */
+  display: flex;
+  gap: 20px; /* სივრცის გასაზრდელად */
+}
+
+footer img {
+  height: 50px; /* ყველა გამოსახულების ზომა */
+}
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .navigation {
+      flex-direction: column; /* ნავიგაციის ჩამონათვალი სვეტში */
+      gap: 10px; /* უფრო მცირე სივრცე */
+  }
+
+  h2 {
+      font-size: 1.5em; /* პატარა ეკრანებზე პატარა ზომა */
+      position: relative; /* ადგილმდებარეობა წაიღებს */
+      top: auto; /* ავტომატურად გაიწევს */
+  }
+
+  h3 {
+      font-size: 1em; /* პატარა ზომა */
+      position: relative; /* ადგილმდებარეობა წაიღებს */
+      top: auto; /* ავტომატურად გაიწევს */
+  }
+
+  footer {
+      flex-direction: column; /* ბარათი სვეტში */
+      align-items: center; /* ცენტრალური */
+  }
+
+  footer img {
+      height: 40px; /* გამოსახულების ზომა მობილურებისთვის */
+  }
 }
