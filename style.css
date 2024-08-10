@@ -13,10 +13,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: #171717;
-  color: #fff; /* შეიცვალა ფერი, რომ მეტი კონტრასტი ჰქონდეს */
+  color: #fff; 
   line-height: 1.6;
   position: relative;
-  font-family: 'Poppins', sans-serif; /* დაამატე "Poppins" ფონტი */
+  font-family: 'Poppins', sans-serif; 
   overflow: hidden;
 }
 
@@ -82,14 +82,14 @@ h2 {
   color: rgb(249, 249, 249);
   position: absolute;
   top: 360px;
-  left: 20px; /* შეცვლილი ადგილმდებარეობა */
+  left: 20px; 
 }
 
 h3 {
   color: rgb(221, 221, 221);
   position: absolute;
   top: 400px; 
-  left: 20px; /* შეცვლილი ადგილმდებარეობა */
+  left: 20px; 
 }
 
 header {
@@ -98,7 +98,7 @@ header {
   left: 0;
   width: 100%;
   padding: 10px 100px;
-  background: rgba(68, 67, 69, 0.92); /* ოდნავ გამჭვირვალე ფონტი */
+  background: rgba(68, 67, 69, 0.92); 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,45 +123,12 @@ header {
 
 footer {
   position: absolute;
-  bottom: 20px; /* დაამატე დამაკავშირებელი */
-  left: 20px; /* გადაამოწმე მდებარეობა */
+  bottom: 20px; 
+  left: 20px; 
   display: flex;
-  gap: 20px; /* სივრცის გასაზრდელად */
+  gap: 20px; 
 }
 
 footer img {
-  height: 50px; /* ყველა გამოსახულების ზომა */
-}
-@media (max-width: 768px) {
-  header {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-  }
-
-  .navigation {
-      flex-direction: column; /* ნავიგაციის ჩამონათვალი სვეტში */
-      gap: 10px; /* უფრო მცირე სივრცე */
-  }
-
-  h2 {
-      font-size: 1.5em; /* პატარა ეკრანებზე პატარა ზომა */
-      position: relative; /* ადგილმდებარეობა წაიღებს */
-      top: auto; /* ავტომატურად გაიწევს */
-  }
-
-  h3 {
-      font-size: 1em; /* პატარა ზომა */
-      position: relative; /* ადგილმდებარეობა წაიღებს */
-      top: auto; /* ავტომატურად გაიწევს */
-  }
-
-  footer {
-      flex-direction: column; /* ბარათი სვეტში */
-      align-items: center; /* ცენტრალური */
-  }
-
-  footer img {
-      height: 40px; /* გამოსახულების ზომა მობილურებისთვის */
-  }
+  height: 50px; 
 }
