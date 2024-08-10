@@ -82,14 +82,14 @@ h2 {
   color: rgb(249, 249, 249);
   position: absolute;
   top: 360px;
-  left: 200px; /* შეცვლილი ადგილმდებარეობა */
+  left: 20px; /* შეცვლილი ადგილმდებარეობა */
 }
 
 h3 {
   color: rgb(221, 221, 221);
   position: absolute;
   top: 400px; 
-  left: 200px; /* შეცვლილი ადგილმდებარეობა */
+  left: 20px; /* შეცვლილი ადგილმდებარეობა */
 }
 
 header {
